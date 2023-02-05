@@ -1,0 +1,74 @@
+#container {
+    position: relative;
+}
+
+#ball {
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(to right, rgb(249, 4, 4), rgb(242, 94, 8));
+    position: fixed;
+    top: 30px;
+    left: 62.5%;
+    border-radius: 50%;
+}
+
+#rod1, #rod2 {
+    z-index: 2;
+    width: 200px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#rod1 {
+    background-image: linear-gradient(to right, rgb(30, 172, 233), rgb(234, 242, 8));
+    top: 0px;    
+}
+
+#rod2 {
+    background-image: linear-gradient(to right, rgb(233, 30, 182), rgb(8, 160, 242));
+    bottom: 0px;
+}
+
+#spike1 {
+    position: fixed;
+    top: 0px;
+    height: 30px;
+    width: 100%;
+    background-image: url(spike1.jpg);
+    transform: rotate(180deg);
+    object-fit: contain;
+}
+#spike2 {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background-image: url(spike1.jpg);
+    object-fit: contain;
+}
+
+#title-name {
+    position: fixed;
+    top: 40%;
+    left: 30%;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(0, 255, 123);
+}
+h1 span {
+    color: rgb(127, 255, 176);
+    font-size: 20px;
+}
